@@ -17,6 +17,18 @@ import org.springframework.web.bind.annotation.RestController;
             return "test";
 
         }
+
+        @GetMapping("/test2")
+        public String test2() {
+            int result = 0;
+            for (int i = 0; i < 100; i++) {
+                System.out.println(i);
+                result += i;
+            }
+            System.out.println(result);
+            return "test";
+
+        }
     }
 
 
